@@ -229,6 +229,9 @@ We know that this is the case on Raspberry Pi.
 - `os_cron_enabled`
   - Default: `true`
   - Description: Set to false to disable installing and configuring cron.
+- `os_ctrlaltdel_disabled`
+  - Default: `false`
+  - Description: Set to true to disable ctrl-alt-delete key combination.
 - `os_limits_enabled`
   - Default: `true`
   - Description: Set to false to disable installing and configuring limits.
@@ -247,6 +250,9 @@ We know that this is the case on Raspberry Pi.
 - `os_profile_enabled`
   - Default: `true`
   - Description: Set to false to disable installing and configuring profile.
+- `os_security_auto_logout`
+  - Default: `0`
+  - Description: Set timeout in seconds for logout users automatically after time. Setting this to `0` disables the timeout.
 - `os_securetty_enabled`
   - Default: `true`
   - Description: Set to false to disable installing and configuring securetty.
@@ -262,6 +268,9 @@ We know that this is the case on Raspberry Pi.
 - `os_yum_enabled`
   - Default: `true`
   - Description: Set to false to disable installing and configuring yum.
+- `os_yum_repo_file_whitelist`
+  - Default: `[]`
+  - Description: List of yum repository files under /etc/yum.repos.d/ which should not be altered.
 - `os_apt_enabled`
   - Default: `true`
   - Description: Set to false to disable installing and configuring apt.
